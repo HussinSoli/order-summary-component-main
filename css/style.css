@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Red Hat Display";
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #7280a7; }
+  body h1 {
+    color: #1f2f56;
+    font-weight: 900; }
+
+.card-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+
+.card {
+  margin: 8rem 0;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 2rem;
+  box-shadow: 0 10rem 8rem rgba(0, 0, 0, 0.2); }
+  .card__hero {
+    border-radius: 2rem 2rem 0 0;
+    margin-bottom: 5rem;
+    width: 100%; }
+  .card__title {
+    margin-bottom: 2rem;
+    font-size: 2.5rem; }
+  .card__info {
+    padding: 0 5rem;
+    margin-bottom: 1.7rem; }
+  .card__subscription {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f7ff;
+    width: 70%;
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem; }
+    .card__subscription--item {
+      display: flex;
+      padding: 2rem 0; }
+    .card__subscription--icon {
+      margin-right: 2rem; }
+    .card__subscription--plan span {
+      color: #1f2f56;
+      font-weight: 700; }
+    .card__subscription--link {
+      text-decoration: underline;
+      color: #3829e0;
+      font-weight: 700; }
+      .card__subscription--link:hover {
+        text-decoration: none;
+        color: #6e63e9; }
+  .card__btn {
+    width: 80%;
+    padding: 2rem 0;
+    border-radius: 1rem;
+    outline: none;
+    border: none;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+    margin-bottom: 2.5rem;
+    background-color: #3829e0;
+    font-family: "Red Hat Display";
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 700; }
+    .card__btn:hover {
+      background-color: #6e63e9;
+      cursor: pointer; }
+  .card__cancel {
+    font-weight: 700;
+    color: #7280a7;
+    margin-bottom: 5rem; }
+    .card__cancel:hover {
+      color: #1f2f56; }
+
+@media screen and (min-width: 400px) {
+  .card {
+    max-width: 40rem; }
+    .card__info {
+      padding: 0 5rem;
+      margin-bottom: 1.7rem;
+      font-size: 1.7rem; } }
